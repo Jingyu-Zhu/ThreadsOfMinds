@@ -20,8 +20,14 @@ body {
   line-height: 1.7;
 }
 
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--purple);
+}
+
+
 a {
-  color: inherit;
+  color: var(--purple);
   text-decoration: none;
 }
 
@@ -139,7 +145,8 @@ main {
 
 .button:hover,
 .button:focus {
-  transform: translateY(-2px);
+  color: #fff;
+  text-decoration: underline;
   box-shadow: 0 26px 42px rgba(140, 82, 255, 0.35);
 }
 
@@ -160,7 +167,7 @@ main {
   font-size: clamp(2rem, 4vw, 2.8rem);
   margin-bottom: 2rem;
   text-align: center;
-  color: var(--charcoal);
+  color: var(--purple);
 }
 
 .section-subtitle {
@@ -268,7 +275,7 @@ main {
 .timeline {
   border-left: 3px solid rgba(140, 82, 255, 0.35);
   margin: 2.5rem 0;
-  padding-left: 1.75rem;
+  padding-left: 2.12rem;
 }
 
 .timeline-item {
@@ -522,7 +529,7 @@ input[type='email']:focus {
   font-size: clamp(2rem, 3vw, 2.4rem);
   margin: 0;
   letter-spacing: 0.01em;
-  color: var(--charcoal);
+  color: var(--purple);
 }
 
 .org-card__link {
