@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'proxima-n-w01-reg';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://static.parastorage.com/fonts/v2/c24fcada-6239-48bc-8b88-9288338191c9/v1/proxima-n-w05-reg.woff2') format('woff2'),
+       url('https://static.parastorage.com/fonts/v2/c24fcada-6239-48bc-8b88-9288338191c9/v1/proxima-n-w01-reg.woff2') format('woff2');
+}
+
 ﻿:root {
   --purple: #8c52ff;
   --dark-purple: #4a2c9f;
@@ -14,7 +23,7 @@
 
 body {
   margin: 0;
-  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-family: 'proxima-n-w01-reg', 'Poppins', 'Segoe UI', sans-serif;
   color: var(--charcoal);
   background: var(--lavender);
   line-height: 1.7;
@@ -97,8 +106,7 @@ main {
 }
 
 .hero {
-  background: linear-gradient(135deg, rgba(18, 6, 61, 0.5), rgba(76, 41, 160, 0.35)),
-    url('../images/hero-bg.jpg') center/cover no-repeat;
+  background: url('../images/hero-bg.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 6rem 1.5rem 5rem;
@@ -120,7 +128,8 @@ main {
 .hero p {
   font-size: clamp(1.1rem, 2.2vw, 1.4rem);
   margin-bottom: 2.5rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 .button {
@@ -560,7 +569,7 @@ input[type='email']:focus {
 
 
 .terms-hero {
-  background: linear-gradient(135deg, rgba(18, 6, 61, 0.9), rgba(76, 41, 160, 0.8));
+  background: linear-gradient(135deg, #7c4dff 0%, #4a1fff 100%);
   color: #fff;
   text-align: center;
   padding: 5rem 1.5rem 4rem;
@@ -625,4 +634,51 @@ input[type='email']:focus {
 .policy-stack a {
   color: var(--purple);
   font-weight: 600;
+}
+
+.hero h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.section-title,
+.more-hero h1,
+.more-hero__kicker,
+.policy-stack h2,
+.terms-hero h1,
+.terms-content h2 {
+  font-family: 'Syne', sans-serif;
+}
+
+.section-title {
+  font-weight: 600;
+}
+
+
+.terms-hero .button {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1rem 3.5rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #8c5cff 0%, #5b2cff 100%);
+  box-shadow: 0 20px 40px rgba(124, 77, 255, 0.35);
+}
+
+.terms-content p {
+  font-size: 1.1rem;
+}
+
+.terms-callout {
+  font-family: 'Syne', sans-serif;
+  letter-spacing: 0.12em;
+}
+.card h3,
+.more-hero__kicker,
+.org-card h2,
+.org-card__link,
+.timeline-item h3 {
+  font-family: 'Syne', sans-serif;
 }
